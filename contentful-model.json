@@ -1,0 +1,13 @@
+{
+  "name": "HelloWorld",
+  "displayField": "message",
+  "fields": [
+    {
+      "id": "message",
+      "name": "Message",
+      "type": "Text",
+      "localized": false,
+      "required": true
+    }
+  ]
+}
