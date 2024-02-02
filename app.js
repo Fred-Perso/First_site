@@ -4,7 +4,7 @@ const accessToken = '4bN39QvRqlrq7lye4vpkXR';
 const contentTypeId = 'test';
 
 // URL de l'API Content Delivery
-const apiUrl = `https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=${contentTypeId}`;
+const apiUrl = `https://app.contentful.com/spaces/8pvw0ip6a9ui/content_types/helloWorld/fields`;
 
 // Fonction pour récupérer les données depuis Contentful
 async function fetchData() {
