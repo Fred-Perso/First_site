@@ -1,7 +1,7 @@
 // Remplacez 'YOUR_SPACE_ID' et 'YOUR_ACCESS_TOKEN' par les informations de votre espace Contentful.
 const spaceId = 'Blank';
 const accessToken = '4TWGfTm1LyHaY6qnApBE7m';
-const contentTypeId = 'helloWorld';
+const contentTypeId = 'dd';
 
 // URL de l'API Content Delivery
 const apiUrl = `https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=${contentTypeId}`;
