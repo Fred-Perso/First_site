@@ -1,5 +1,5 @@
 // Remplacez 'YOUR_SPACE_ID' et 'YOUR_ACCESS_TOKEN' par les informations de votre espace Contentful.
-const spaceId = 'DD';
+const spaceId = 'Blank';
 const accessToken = '4TWGfTm1LyHaY6qnApBE7m';
 const contentTypeId = 'helloWorld';
 
