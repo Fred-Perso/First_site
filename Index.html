@@ -30,6 +30,11 @@
             // Display the content in the HTML page
             document.getElementById('contentfulContent').innerHTML = `<p>${content}</p>`;
         })
+        .then(data => {
+    console.log(data);  // Ajoutez cette ligne pour voir la réponse complète dans la console
+    const content = data.fields.helloWorld;
+    console.log(content);
+})
         .catch(error => console.error('Error fetching Contentful content:', error));
 </script>
 
