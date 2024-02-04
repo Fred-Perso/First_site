@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contentful Hello World</title>
+    <title>Contentful Content Display</title>
 </head>
 <body>
-    <h1>Hello World Message</h1>
-    <div id="helloWorldMessage"></div>
-<script src="app.js"></script>
- 
+
+<div id="contentfulContent">
+    <!-- Content will be displayed here -->
+</div>
+
+<script>
+    // Replace with your Contentful space ID and access token
+    const spaceId = '8pvw0ip6a9ui';
+    const accessToken = '4dR9Ohm74VaxgQyCEc0JcBJij-0XjXcgAjBt-VzQuxU';
+
+    // Replace with the entry ID for the content you want to display
+    const entryId = 'helloWorld';
+
+    // Fetch content from Contentful
+    fetch(`https://cdn.contentful.com/spaces/${spaceId}/entries/${entryId}?access_token=${accessToken}`)
+        .then(response => response.json())
+        .then(data => {
+            // Extract the content from the response
+            const content = data.fields.helloWorld;
+
+            // Display the content in the HTML page
+            document.getElementById('contentfulContent').innerHTML = `<p>${content}</p>`;
+        })
+        .catch(error => console.error('Error fetching Contentful content:', error));
+</script>
+
 </body>
 </html>
